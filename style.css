@@ -35,11 +35,15 @@ header h1 {
     color: #0066ff;
 }
 
-.teaser img {
-    width: 100%;
-    border-radius: 10px;
-    margin-top: 30px;
+
+img{
+    height: 350px;
+    width: 280px;
+    border-radius: 5%;
+    vertical-align: middle;
+    border-style: none;
 }
+
 
 h2 {
     margin-top: 50px;
@@ -55,6 +59,7 @@ h2 {
     overflow-x: auto;
     font-family: monospace;
 }
+
 
 footer {
     text-align: center;
