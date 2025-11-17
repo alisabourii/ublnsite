@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    font-family: Inter, sans-serif;
+    background: #fff;
+    color: #222;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-top: 40px;
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.authors {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #444;
+}
+
+.links a {
+    margin: 0 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #0066ff;
+}
+
+.teaser img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+h2 {
+    margin-top: 50px;
+    border-left: 6px solid #0066ff;
+    padding-left: 10px;
+    font-size: 28px;
+}
+
+.bibtex-box {
+    background: #f7f7f7;
+    padding: 15px;
+    border-radius: 10px;
+    overflow-x: auto;
+    font-family: monospace;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+    background: #fafafa;
+    color: #555;
+}
