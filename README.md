@@ -52,7 +52,7 @@ UBln project's promotional website.
     <tr>
       <td align="center" nowrap>01.11.2026 -<br>30.12.2026</td>
       <td>Afet Senaryosu Uygulaması ve Son Rapor</td>
-      <td>Proje Yürütücüsü,<br>Elisa Şevval KAYİŞ,<br>Sinem ŞAHİN</td>
+      <td>Tüm ekip üyeleri</td>
       <td>İnternetsiz küçük bir alanda (okul bahçesi, park, kampüs vb.) senaryo testi ve iyileştirme önerilerinin hazırlanması. (%15)</td>
     </tr>
   </tbody>
