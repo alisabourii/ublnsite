@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Afet Durumlarında İnternetsiz UDP Tabanlı Yerel Haberleşme Prototipi</title>
+    <title>Analizler ve Test Sonuçları | UDP Tabanlı Yerel Haberleşme Prototipi</title>
 
-    <meta name="description" content="Academic paper project page.">
-    <meta property="og:title" content="Paper Title">
-    <meta property="og:description" content="Academic research project.">
-    <meta property="og:image" content="teaser.jpg">
+    <meta name="description" content="Proje saha testleri, veri analizleri ve performans metrikleri.">
+    <meta property="og:title" content="Analizler - UDP Tabanlı Yerel Haberleşme Prototipi">
+    <meta property="og:description" content="Mesafe, paket kaybı ve gecikme sürelerine ait saha analizi verileri.">
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <link href="style.css" rel="stylesheet">
 </head>
 
@@ -20,25 +21,107 @@
 
 <div class="container">
 
-    <!-- Title + Authors -->
     <header>
-        <h1>Afet Durumlarında UDP Tabanlı Yerel Haberleşme Prototipi</h1>
-        <div class="authors">Ali SABOURI · Abdullah BALCI · Yalova Üniversitesi</div>
-        <div class="authors">· Zelal MUŞTU · Özde ÖZGEN · Sinem ŞAHİN · Elisa KAYİŞ</div>
+        <div class="nav-back">
+            <a href="index.html" class="btn-back"><i class="fa-solid fa-arrow-left"></i> Ana Sayfaya Dön</a>
+        </div>
+        <h1 style="margin-top: 15px;">Saha Testleri & Analiz Verileri</h1>
+        <div class="authors">Afet Durumlarında UDP Tabanlı Yerel Haberleşme Prototipi</div>
 
         <div class="links" style="margin-top: 20px;">
-            <a href="paper.html">📄 Çalışma</a>
-            <a href="https://github.com/alisabourii/ubln">💻 Kodlar</a>
-            <a href="analyses.html">📁 Analizar</a>
-            <a href="video.mp4">🎥 Video</a>
+            <a href="paper.html" class="btn"><i class="fa-solid fa-file-pdf"></i> Çalışma</a>
+            <a href="https://github.com/alisabourii/ubln" target="_blank" class="btn"><i class="fa-brands fa-github"></i> Kodlar</a>
+            <a href="video.mp4" class="btn"><i class="fa-solid fa-video"></i> Proje Videosu</a>
         </div>
     </header>
+
+    <hr class="section-divider">
+
+    <h2>Performans Özet Metrikleri</h2>
+    <div class="metrics-grid">
+        <div class="metric-card">
+            <h3>Test Edilen Düğüm (Node)</h3>
+            <p class="metric-value">3 — 5</p>
+            <span>MVP Ölçeği</span>
+        </div>
+        <div class="metric-card">
+            <h3>Hedeflenen Ağ Tipi</h3>
+            <p class="metric-value">UDP Mesh</p>
+            <span>Hop-by-Hop Retransmission</span>
+        </div>
+        <div class="metric-card">
+            <h3>Optimizasyon Yöntemi</h3>
+            <p class="metric-value">FEC</p>
+            <span>Hafif Hata Düzeltme</span>
+        </div>
+    </div>
+
+    <h2>Grafikler ve Ağ Topolojisi</h2>
+    <p>
+        Yapılan saha simülasyonlarında ve test kümelerinde elde edilen paket teslimat oranları (PDR), mesafe bazlı sinyal kalitesi (RSSI) ve uçtan uca gecikme süreleri aşağıdaki grafiklerde modellenmiştir.
+    </p>
+
+    <div class="analysis-graphs">
+        <div class="graph-box">
+            <img src="src/graph1.jpg" alt="Mesafe ve Paket Kayıp Oranı Grafiği" onerror="this.src='https://placehold.co/600x400/0f172a/fff?text=Mesafe+/+Paket+Kayip+Grafigi'">
+            <div class="graph-caption">Şekil 1: Düğümler arası mesafeye bağlı paket kayıp analizi (FEC Aktif/Pasif)</div>
+        </div>
+
+        <div class="graph-box">
+            <img src="src/graph2.jpg" alt="Gecikme Süreleri Analizi" onerror="this.src='https://placehold.co/600x400/0f172a/fff?text=Gecikme+(Latency)+Analizi'">
+            <div class="graph-caption">Şekil 2: Hop sayısına göre uçtan uca ortalama gecikme (Latency) süreleri</div>
+        </div>
+    </div>
+
+    <h2>Saha Testi Ham Verileri (Örnek Küme)</h2>
+    <p>Prototip doğrulama aşamasında açık alanda gerçekleştirilen çoklu sekme (multi-hop) test senaryolarına ait metrik veri tablosu:</p>
+
+    <div class="table-container">
+        <table class="analysis-table">
+            <thead>
+            <tr>
+                <th>Senaryo ID</th>
+                <th>Düğüm Sayısı</th>
+                <th>Ort. Mesafe (m)</th>
+                <th>Paket Tipi</th>
+                <th>Başarı Oranı (PDR)</th>
+                <th>Durum</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>#TS-001</td>
+                <td>3 Cihaz</td>
+                <td>45m</td>
+                <td>Standart UDP</td>
+                <td>%92.4</td>
+                <td><span class="status-tag success">Başarılı</span></td>
+            </tr>
+            <tr>
+                <td>#TS-002</td>
+                <td>4 Cihaz</td>
+                <td>80m</td>
+                <td>UDP + FEC</td>
+                <td>%96.8</td>
+                <td><span class="status-tag success">Başarılı</span></td>
+            </tr>
+            <tr>
+                <td>#TS-003</td>
+                <td>5 Cihaz</td>
+                <td>120m (Çoklu Sekme)</td>
+                <td>UDP + FEC + Retransmission</td>
+                <td>%89.1</td>
+                <td><span class="status-tag warning">Değerlendiriliyor</span></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
 </div>
 
 <footer>
-    © November 2025 — Ali Sabouri · Academic Research Page
+    <p>© 2026 — Ali Sabouri · Akademik Araştırma Projesi Analiz Sayfası</p>
 </footer>
 
 </body>
-
 </html>
