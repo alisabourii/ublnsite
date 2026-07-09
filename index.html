@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 
 <head>
     <meta charset="UTF-8">
@@ -7,12 +7,14 @@
 
     <title>Afet Durumlarında İnternetsiz UDP Tabanlı Yerel Haberleşme Prototipi</title>
 
-    <meta name="description" content="Academic paper project page.">
-    <meta property="og:title" content="Paper Title">
-    <meta property="og:description" content="Academic research project.">
-    <meta property="og:image" content="teaser.jpg">
+    <meta name="description" content="TÜBİTAK 2209-A Akademik Proje Sayfası">
+    <meta property="og:title" content="Afet Durumlarında UDP Tabanlı Yerel Haberleşme Prototipi">
+    <meta property="og:description" content="Altyapısız ortamlarda akıllı telefonlar üzerinden yerel haberleşme ağı.">
+    <meta property="og:image" content="src/mainPage.jpg">
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <link href="style.css" rel="stylesheet">
 </head>
 
@@ -20,88 +22,115 @@
 
 <div class="container">
 
-    <!-- Title + Authors -->
     <header>
         <h1>Afet Durumlarında UDP Tabanlı Yerel Haberleşme Prototipi</h1>
-        <div class="authors">Ali SABOURI · Abdullah BALCI · Yalova Üniversitesi</div>
-        <div class="authors">· Zelal MUŞTU · Özde ÖZGEN · Sinem ŞAHİN · Elisa KAYİŞ</div>
 
-        <div class="links" style="margin-top: 20px;">
-            <a href="paper.html">📄 Çalışma</a>
-            <a href="https://github.com/alisabourii/ubln">💻 Kodlar</a>
-            <a href="analyses.html">📁 Analizar</a>
-            <a href="video.mp4">🎥 Video</a>
+        <div class="project-badge">TÜBİTAK 2209-A Üniversite Öğrencileri Araştırma Projeleri Destekleme Programı</div>
+
+        <div class="authors-group">
+            <div class="authors primary-author">Ali SABOURI · Dr. Öğr. Üyesi Abdullah BALCI (Danışman)</div>
+            <div class="authors university">Yalova Üniversitesi · Bilgisayar Mühendisliği Bölümü</div>
+            <div class="authors team">Zelal MUŞTU · Özde ÖZGEN · Sinem ŞAHİN · Elisa KAYİŞ</div>
+        </div>
+
+        <div class="links">
+            <a href="paper.html" class="btn"><i class="fa-solid fa-file-pdf"></i> Çalışma</a>
+            <a href="https://github.com/alisabourii/ubln" target="_blank" class="btn"><i class="fa-brands fa-github"></i> Kodlar</a>
+            <a href="analyses.html" class="btn"><i class="fa-solid fa-chart-simple"></i> Analizler</a>
+            <a href="video.mp4" class="btn"><i class="fa-solid fa-video"></i> Proje Videosu</a>
         </div>
     </header>
 
-    <!-- Teaser Image -->
-    <div class="teaser">
-        <img src="src/mainPage.jpg" alt="Teaser Image">
-        <img src="src/prs1.jpg" alt="Teaser Image">
-        <img src="src/prs2.jpg" alt="Teaser Image">
+    <hr class="section-divider">
+
+    <div class="teaser-grid">
+        <div class="teaser-item">
+            <img src="src/mainPage.png" alt="Arayüz Ekran Görüntüsü">
+        </div>
+        <div class="teaser-item">
+            <img src="src/prs1.jpg" alt="Saha Testi Aşaması 1">
+        </div>
+        <div class="teaser-item">
+            <img src="src/prs2.jpg" alt="Saha Testi Aşaması 2">
+        </div>
     </div>
 
-    <!-- Abstract Section -->
-    <h2>Özet</h2>
-    <p>
-        Bu proje, afet bölgelerinde internet, baz istasyonu veya herhangi bir altyapı bulunmadığında dahi çalışabilen,
-        düşük maliyetli ve enerjiyi verimli kullanan bir mobil haberleşme prototipi geliştirmeyi amaçlamaktadır.
-    </p>
+    <section>
+        <h2>Özet</h2>
+        <p class="abstract-text">
+            Bu proje, afet bölgelerinde internet, baz istasyonu veya herhangi bir altyapı bulunmadığında dahi çalışabilen,
+            düşük maliyetli ve enerjiyi verimli kullanan bir mobil haberleşme prototipi geliştirmeyi amaçlamaktadır.
+        </p>
+    </section>
 
-    <!-- Motivation / Intro -->
-    <h2>Giriş</h2>
-    <p>
-        Türkiye, jeolojik konumu itibarıyla sık sık büyük depremlerle karşılaşan bir ülkedir; afet anlarında hücresel/internet
-        altyapılarının zarar görmesi sonucu iletişim kesintileri yaşanmakta ve bu durum arama-kurtarma ile ilk müdahaleyi
-        olumsuz etkilemektedir. Bu projenin amacı, mevcut kullanıcı cihazlarını (akıllı telefonlar) kullanarak, internetsiz
-        koşullarda yerel UDP tabanlı bir mesh iletişim prototipi geliştirmek ve paket teslimat güvenilirliğini artıracak hafif
-        hata düzeltme (FEC) ile hop-by-hop retransmission mekanizmalarını değerlendirmektir. Proje, saha
-        uygulanabilirliği önceliğiyle mahalle – kampüs ölçeğinde (MVP: 3–5 cihazlı test kümeleri) doğrulanacak ölçüde
-        sınırlandırılmıştır; böylece gerçekçi deneyler ve ölçümler yapılabilecektir.
-    </p>
+    <section>
+        <h2>Giriş ve Motivasyon</h2>
+        <p>
+            Türkiye, jeolojik konumu itibarıyla sık sık büyük depremlerle karşılaşan bir ülkedir; afet anlarında hücresel/internet
+            altyapılarının zarar görmesi sonucu iletişim kesintileri yaşanmakta ve bu durum arama-kurtarma ile ilk müdahaleyi
+            olumsuz etkilemektedir.
+        </p>
+        <p>
+            Bu projenin amacı, mevcut kullanıcı cihazlarını (akıllı telefonlar) kullanarak, internetsiz
+            koşullarda yerel UDP tabanlı bir mesh iletişim prototipi geliştirmek ve paket teslimat güvenilirliğini artıracak hafif
+            hata düzeltme (FEC) ile hop-by-hop retransmission mekanizmalarını değerlendirmektir. Proje, saha
+            uygulanabilirliği önceliğiyle mahalle – kampüs ölçeğinde (MVP: 3–5 cihazlı test kümeleri) doğrulanacak ölçüde
+            sınırlandırılmıştır; böylece gerçekçi deneyler ve ölçümler yapılabilecektir.
+        </p>
+    </section>
 
-    <!-- Method -->
-    <h2>Yöntem</h2>
-    <p>
-        Bu araştırmada, afet gibi internet ve baz istasyonlarının devre dışı kaldığı durumlarda akıllı telefonlar kullanılarak
-        yerel, internetsiz, UDP tabanlı bir haberleşme ağı oluşturmak amaçlanmaktadır. Araştırmanın yöntemi üç temel
-        aşamadan oluşmaktadır: (1) mobil uygulama geliştirme, (2) saha testleri ve performans ölçümleri, (3) veri analizi
-        ve değerlendirme.
+    <section>
+        <h2>Yöntem</h2>
+        <p>
+            Bu araştırmada, afet gibi internet ve baz istasyonlarının devre dışı kaldığı durumlarda akıllı telefonlar kullanılarak
+            yerel, internetsiz, UDP tabanlı bir haberleşme ağı oluşturmak amaçlanmaktadır. Araştırmanın yöntemi üç temel
+            aşamadan oluşmaktadır:
+        </p>
+        <ul class="method-list">
+            <li><strong>1. Mobil Uygulama Geliştirme:</strong> Android platformu üzerinde Wi-Fi Direct / Wi-Fi Aware teknolojileriyle UDP soket programlama entegrasyonu.</li>
+            <li><strong>2. Saha Testleri ve Performans Ölçümleri:</strong> Kampüs ve mahalle ölçeğinde gecikme (latency) ve paket kaybı (packet loss) analizleri.</li>
+            <li><strong>3. Veri Analizi ve Değerlendirme:</strong> Elde edilen metriklerin hata düzeltme (FEC) algoritmaları optimizasyonunda kullanılması.</li>
+        </ul>
+    </section>
 
-    </p>
+    <section>
+        <h2>Sonuçlar ve Durum</h2>
+        <div class="status-box">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            <span>Proje çıktıları ve saha analizi verileri 12 ay içinde tamamlanarak burada yayınlanacaktır.</span>
+        </div>
+    </section>
 
-    <!-- Results -->
-    <h2>Sonuçlar</h2>
-    <p>
-        12 ay içinde elde edilecektir.
-    </p>
-
-    <!-- <img src="results.jpg" alt="Results" style="width:100%; border-radius:10px; margin-top:20px;">-->
-
-     <!-- Citation -->
-    <h2>Alıntı/Kaynak</h2>
-    <div class="bibtex-box">
+    <section>
+        <h2>Kaynakça</h2>
+        <div class="bibtex-box">
 <pre>
-Android Deceloper. (2024, 10 17). Connect devices wirelessly. developer.android.com:
+Android Developer. (2024, 10 17). Connect devices wirelessly. developer.android.com:
 https://developer.android.com/develop/connectivity/wifi adresinden alındı
-başkanlığı, s. v. (2023). ON İKİNCİ KALKINMA PLANI(2024-2028). strateji ve bütçe başkanlığı.
+
+T.C. Cumhurbaşkanlığı Strateji ve Bütçe Başkanlığı. (2023). ON İKİNCİ KALKINMA PLANI (2024-2028).
+
 G.T.C, G., Jayarathna P.V.N.M, Sandamini S.S.P, & De Silva D. (2015). Implementing wireless Adhoc networks
-for disaster relief communication. ieeexplore.
+for disaster relief communication. IEEE Xplore.
+
 Kran, E. (2023). The MACHIAVELLI Benchmark. Website template for an academic paper or article:
 https://aypan17.github.io/machiavelli/ adresinden alındı
+
 MOORTHY, R., GUIDO , B., & GILL, S. (2018). Disaster Communication in Managing Vulnerabilities. Malaysian
 Journal of Communication.
+
 Teófilo, A., Lourenço , J., & Paulino, H. (2020). RedMesh: A WiFi-Direct Network Formation Algorithm for.
+
 THAM, M.-L. (2023, 3). Performance Study of Disaster-Resilient Mesh Networking. nict.go.jp.
 </pre>
-    </div>
+        </div>
+    </section>
 
 </div>
 
 <footer>
-    © November 2025 — Ali Sabouri · Academic Research Page
+    <p>© 2026 — Ali Sabouri · Akademik Araştırma Projesi Sayfası</p>
 </footer>
 
 </body>
-
 </html>
