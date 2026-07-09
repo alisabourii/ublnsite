@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Afet Durumlarında İnternetsiz UDP Tabanlı Yerel Haberleşme Prototipi</title>
+    <title>Akademik Çalışma | UDP Tabanlı Yerel Haberleşme Prototipi</title>
 
-    <meta name="description" content="Academic paper project page.">
-    <meta property="og:title" content="Paper Title">
-    <meta property="og:description" content="Academic research project.">
-    <meta property="og:image" content="teaser.jpg">
+    <meta name="description" content="Proje akademik makalesi, özeti ve tam metin dökümanı.">
+    <meta property="og:title" content="Akademik Çalışma - UDP Tabanlı Yerel Haberleşme Prototipi">
+    <meta property="og:description" content="Afet durumlarında kullanılacak yerel haberleşme prototipinin akademik raporu.">
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <link href="style.css" rel="stylesheet">
 </head>
 
@@ -20,25 +21,58 @@
 
 <div class="container">
 
-    <!-- Title + Authors -->
     <header>
-        <h1>Afet Durumlarında UDP Tabanlı Yerel Haberleşme Prototipi</h1>
-        <div class="authors">Ali SABOURI · Abdullah BALCI · Yalova Üniversitesi</div>
-        <div class="authors">· Zelal MUŞTU · Özde ÖZGEN · Sinem ŞAHİN · Elisa KAYİŞ</div>
+        <div class="nav-back">
+            <a href="index.html" class="btn-back"><i class="fa-solid fa-arrow-left"></i> Ana Sayfaya Dön</a>
+        </div>
+        <h1 style="margin-top: 15px;">Akademik Çalışma & Rapor</h1>
+        <div class="authors">Afet Durumlarında UDP Tabanlı Yerel Haberleşme Prototipi</div>
 
         <div class="links" style="margin-top: 20px;">
-            <a href="paper.pdf">📄 Çalışma</a>
-            <a href="https://github.com/alisabourii/ubln">💻 Kodlar</a>
-            <a href="analyses.html">📁 Analizar</a>
-            <a href="video.mp4">🎥 Video</a>
+            <a href="paper.pdf" class="btn btn-primary" download><i class="fa-solid fa-file-arrow-down"></i> Tam Metin PDF İndir</a>
+            <a href="https://github.com/alisabourii/ubln" target="_blank" class="btn"><i class="fa-brands fa-github"></i> Kodlar</a>
+            <a href="analyses.html" class="btn"><i class="fa-solid fa-chart-simple"></i> Analizler</a>
         </div>
     </header>
+
+    <hr class="section-divider">
+
+    <div class="paper-meta-box">
+        <p><strong>Yazar Kadrosu:</strong> Ali SABOURI, Zelal MUŞTU, Özde ÖZGEN, Sinem ŞAHİN, Elisa KAYİŞ</p>
+        <p><strong>Danışman:</strong> Dr. Öğr. Üyesi Abdullah BALCI</p>
+        <p><strong>Kurum:</strong> Yalova Üniversitesi, Mühendislik Fakültesi, Bilgisayar Mühendisliği Bölümü</p>
+        <p><strong>Destekleyen Kurum:</strong> TÜBİTAK 2209-A Üniversite Öğrencileri Araştırma Projeleri Destek Programı</p>
+    </div>
+
+    <section class="paper-section">
+        <h2>Özet</h2>
+        <p class="paper-text">
+            Bu çalışma, doğal afetler veya beklenmedik altyapı çökmeleri sonrasında hücresel ağların ve internet erişiminin tamamen devre dışı kaldığı senaryolara odaklanmaktadır. Bu durumlarda arama-kurtarma ekiplerinin ve bölgedeki sivillerin koordinasyonunu sağlamak amacıyla, mevcut akıllı telefon donanımlarını (Wi-Fi entegre çipleri) kullanan, merkezi bir sunucuya ihtiyaç duymayan, UDP tabanlı yerel bir mesh haberleşme mimarisi önerilmiştir.
+        </p>
+        <p class="paper-text">
+            Geliştirilen mobil prototip üzerinde, veri paketlerinin uçtan uca güvenli ve minimum kayıpla iletilebilmesi amacıyla hop-by-hop retransmission (sekme bazlı yeniden iletim) protokolleri ve hafif hata düzeltme (FEC) algoritmaları gerçek zamanlı test edilmiştir. Saha testlerinden elde edilen ilk bulgular, kısıtlı bant genişliğinde dahi kabul edilebilir bir paket teslimat oranı (PDR) yakalandığını göstermektedir.
+        </p>
+        <p class="keywords">
+            <strong>Anahtar Kelimeler:</strong> Afet Haberleşmesi, UDP Soket Programlama, Ad-hoc Ağlar, Mesh Topolojisi, Wi-Fi Direct, FEC.
+        </p>
+    </section>
+
+    <section class="paper-section">
+        <h2>Çalışma Önizlemesi</h2>
+        <p>Makalenin veya proje raporunun tam metnini aşağıdaki panel üzerinden doğrudan görüntüleyebilirsiniz:</p>
+
+        <div class="pdf-embed-container">
+            <iframe src="paper.pdf" width="100%" height="600px" style="border: 1px solid #cbd5e1; border-radius: 8px;">
+                Tarayıcınız PDF görüntülemeyi desteklemiyor. Dokümanı incelemek için <a href="paper.pdf">buraya tıklayarak indirebilirsiniz</a>.
+            </iframe>
+        </div>
+    </section>
+
 </div>
 
 <footer>
-    © November 2025 — Ali Sabouri · Academic Research Page
+    <p>© 2026 — Ali Sabouri · Akademik Araştırma Projesi Yayın Sayfası</p>
 </footer>
 
 </body>
-
 </html>
