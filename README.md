@@ -88,6 +88,6 @@ Proje üç temel mühendislik ve araştırma fazından oluşmaktadır:
 
 ---
 
-## 🤝 Destekleyen Kurumlar & Teşekkür
+## 🤝 Destekleyen Kurumlar
 
-Bu çalışma, **TÜBİTAK 2209-A - Üniversite Öğrencileri Araştırma Projeleri Destekleme Programı** kapsamında desteklenmektedir. Ekibimizin azmına teşekkür ediyorum.
+Bu çalışma, **TÜBİTAK 2209-A - Üniversite Öğrencileri Araştırma Projeleri Destekleme Programı** kapsamında desteklenmektedir.
